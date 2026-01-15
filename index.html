@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domain For Sale</title>
     <style>
-        * { margin: 0; padding: 0; box-box-sizing: border-box; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: #f8f9fa;
@@ -81,13 +81,30 @@
         <p>Ce nom de domaine est actuellement disponible à la vente. Saisissez cette opportunité pour renforcer votre identité numérique.</p>
     </div>
 
-    <a href="mailto:gant-ce8g@icloud.com?subject=Inquiry Dubaiarchi.com" class="cta-button">
+    <!-- Bouton sans email visible -->
+    <a href="#" class="cta-button" id="contact-btn">
         Make an Offer / Faire une offre
     </a>
 
     <p class="footer">Secure transaction & fast transfer guaranteed.</p>
 </div>
 
+<script>
+    (function () {
+        const user = "gant-ce8g";
+        const domain = "icloud";
+        const tld = "com";
+        const subject = "Inquiry Dubaiarchi.com";
+
+        const email = user + "@" + domain + "." + tld;
+
+        document.getElementById("contact-btn").addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.href =
+                "mailto:" + email + "?subject=" + encodeURIComponent(subject);
+        });
+    })();
+</script>
 
 </body>
 </html>
