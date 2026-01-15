@@ -1,118 +1,106 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DubaiArchi.com | Premium Domain Name</title>
+    <title>Domain For Sale</title>
     <style>
+        * { margin: 0; padding: 0; box-box-sizing: border-box; }
         body {
-            font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #050505;
-            color: #ffffff;
-            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-        }
-        .card {
-            max-width: 900px;
-            width: 90%;
-            padding: 40px;
-            background: #0f0f0f;
-            border: 1px solid #222;
-            border-radius: 20px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            height: 100vh;
             text-align: center;
         }
-        .domain-name {
-            font-size: clamp(2rem, 8vw, 3.5rem);
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 30px;
-            background: linear-gradient(135deg, #d4af37 0%, #fcf6ba 50%, #d4af37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .container {
+            background: white;
+            padding: 50px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 600px;
+            width: 90%;
         }
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            text-align: left;
-            border-top: 1px solid #222;
-            padding-top: 30px;
-        }
-        h2 {
-            font-size: 1.2rem;
-            color: #d4af37;
+        .status {
             text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #007bff;
             letter-spacing: 1px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            display: block;
         }
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #aaa;
+        h1 {
+            font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #1a1a1a;
+            word-break: break-all;
         }
-        .cta-container {
-            margin-top: 40px;
+        .description {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
         }
         .cta-button {
             display: inline-block;
-            padding: 18px 45px;
-            background-color: #d4af37;
-            color: #000;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 18px 35px;
             text-decoration: none;
-            font-weight: bold;
             border-radius: 8px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-weight: 600;
+            transition: background 0.2s;
+            cursor: pointer;
+            border: none;
         }
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
-            background-color: #fcf6ba;
+            background-color: #444;
         }
-        @media (max-width: 768px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            .card { padding: 25px; }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #999;
         }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="domain-name">DubaiArchi.com</div>
+<div class="container">
+    <span class="status">Premium Domain Name</span>
+    <h1 id="domain-display">DomainName.com</h1>
     
-    <div class="content-grid">
-        <div class="lang-block">
-            <h2>Premium Opportunity</h2>
-            <p>
-                The ultimate digital asset for <strong>architecture, design, and luxury real estate</strong> in Dubai. 
-                Own a brandable, short, and highly memorable domain to lead the world's most innovative skyline.
-            </p>
-        </div>
-
-        <div class="lang-block">
-            <h2>Opportunité Premium</h2>
-            <p>
-                L'actif numérique de référence pour <strong>l'architecture, le design et l'immobilier de luxe</strong> à Dubaï. 
-                Acquérez un nom de domaine mémorable pour dominer le marché de la ville la plus innovante au monde.
-            </p>
-        </div>
+    <div class="description">
+        <p><strong>English:</strong> This domain is currently available for purchase. Acquire this digital asset to enhance your brand's online presence.</p>
+        <br>
+        <p><strong>Français :</strong> Ce nom de domaine est actuellement disponible à la vente. Saisissez cette opportunité pour renforcer votre identité numérique.</p>
     </div>
 
-    <div class="cta-container">
-        <a href="mailto:gant-ce8g@icloud.com?subject=Inquiry%20for%20DubaiArchi.com" class="cta-button">
-            Inquire Now / Faire une offre
-        </a>
-    </div>
+    <a href="#" id="offer-link" class="cta-button">
+        Make an Offer / Faire une offre
+    </a>
+
+    <p class="footer">Secure transaction & fast transfer guaranteed.</p>
 </div>
+
+<script>
+    // Ce script détecte automatiquement le nom du domaine actuel
+    const currentDomain = window.location.hostname || "This domain";
+    document.getElementById('domain-display').textContent = currentDomain;
+
+    // Remplacez 'votre-email@exemple.com' par votre véritable adresse email ci-dessous
+    const myEmail = "votre-email@exemple.com"; 
+    
+    const mailtoLink = `mailto:${gant-ce8g@icloud.com}?subject=Inquiry regarding ${currentDomain}&body=Hello, I am interested in acquiring ${currentDomain}. Here is my offer:`;
+    
+    // On applique le lien au bouton
+    document.getElementById('offer-link').href = mailtoLink;
+</script>
 
 </body>
 </html>
